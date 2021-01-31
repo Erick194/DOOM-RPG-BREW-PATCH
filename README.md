@@ -1,5 +1,7 @@
 # DOOM-RPG-BREW-PATCH
 
+![Fix](Animación1.gif)
+
 ## Español
 Este es un pequeño programa que corrige el error de píxeles en Doom RPG BREW, para que se vea correctamente en otros dispositivos BREW.
 
@@ -10,7 +12,6 @@ Este es un pequeño programa que corrige el error de píxeles en Doom RPG BREW, 
 ## English
 This is a small program that fixes the pixel error in Doom RPG BREW, so that it looks correctly on other BREW devices.
 
-What was the error ?: The error originated because when loading the data (stexels, wtexels), the system reads 256 bytes per block until it finished reading the file, apparently some BREW devices created an incompatibility when reading the data.
+**What was the error?:** The error originated because when loading the data (stexels, wtexels), the system reads 256 bytes per block until it finished reading the file, apparently some BREW devices created an incompatibility when reading the data.
 
-Solution: change the value from 256 to 1, so the system will read the data pixel by pixel and not by blocks of 256, in this way the error is corrected, allowing the textures and sprites to be seen correctly.
-
+**Solution:** change the value from 256 to 1, so the system will read the data pixel by pixel and not by blocks of 256, in this way the error is corrected, allowing the textures and sprites to be seen correctly.
